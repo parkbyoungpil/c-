@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+
+  char a[100] = "안녕하세요?";
+  char b[100] = "날씨가 참 좋군요.";
+  char c[100] = "안녕히 계세요!";
+
+  cout << "함수 사용" << endl;
+
+  cout << "문자열의 길이 : " << strlen(a) << endl;
+  cout << "문자열의 길이 : " << strlen(b) << endl;
+  cout << "문자열의 길이 : " << strlen(c) << endl;
+
+  cout << "반복문으로 계산" << endl;
+
+  int sum = 0;
+  for(int i = 0; i <= 100; i++){
+    if(a[i] != '\0'){
+      sum += 1;
+        if(a[i] == '\0'){
+          break;
+        }
+      }
+  }
+
+  cout << sum << endl;
+
+
+  int num = 0;
+  for(int i = 0; i <= 100; i++){
+    if(b[i] != '\0'){
+      num += 1;
+        if(b[i] == '\0'){
+          break;
+        }
+      }
+  }
+  cout << num << endl;
+
+  int nom = 0;
+  for(int i = 0; i <= 100; i++){
+    if(c[i] != '\0'){
+      nom += 1;
+        if(c[i] == '\0'){
+          break;
+        }
+      }
+  }
+  cout << nom << endl;
+
+
+  
+}
