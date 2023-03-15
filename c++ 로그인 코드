@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+
+  char name[10];
+  char password1[50];
+  char password2[50];
+  while(true){
+    cout << "이름 입력: ";
+    cin >> name;
+    cout << "암호 입력: ";
+    cin >> password1;
+    cout << "다시 입력: ";
+    cin >> password2;
+    if(strcmp(password1, password2) == 0){
+      cout << name << "님께서 로그인하셨습니다." << endl;
+      break;
+    }
+    else cout << name << "님, 다시 입력하세요." << endl;
+  }
+  
+}
