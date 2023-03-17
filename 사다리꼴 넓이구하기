@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+
+  float bottom, top, h;
+  float area;
+
+  printf("사다리꼴의 밑변, 윗변, 높이를 차례로 입력하세요: ");
+  scanf("%f %f %f",&bottom, &top, &h);
+  area = (bottom + top) * h / 2;
+  printf("사다리꼴의 넓이는 %g입니다.\n",area);
+  
+  return 0;
+}
