@@ -15,10 +15,13 @@ int main() {
     cout << "다시 입력: ";
     cin >> password2;
     if(strcmp(password1, password2) == 0){
-      cout << name << "님께서 로그인하셨습니다." << endl;
+      cout << name << "님께서 로그인하셨습니다.";
       break;
     }
-    else cout << name << "님, 다시 입력하세요." << endl;
+    else{
+      cout << name << "님, 다시 입력하세요.";
+      break;
+    }
   }
-  
+  return 0;
 }
