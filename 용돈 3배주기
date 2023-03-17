@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+
+  long long num;
+  printf("원하는 한 달 용돈 액수 : ");
+  scanf("%lld",&num);
+  
+  printf("==> 3개월치 용돈 %lld원이 한꺼번에 입금되었습니다 ^_^\n", num * 3);
+  
+  
+  
+  
+  return 0;
+}
