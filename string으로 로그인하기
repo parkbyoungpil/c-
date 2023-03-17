@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+  string a;
+  string b;
+  string c;
+  
+  cout << "이름 입력: ";
+  cin >> a;
+
+  cout << "암호 입력: ";
+  cin >> b;
+
+  cout << "다시 입력: ";
+  cin >> c;
+
+  if (b == c){
+    cout << a + "님께서 로그인하셨습니다.";
+  }
+  else{
+    cout << a + "님, 다시 입력하세요.";
+  }
+}
