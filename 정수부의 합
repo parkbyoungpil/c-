@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+  float a, b;
+  printf("실수 두 개를 입력하세요.\n");
+  scanf("%f", &a);
+  scanf("%f", &b);
+  int c = (int)a + (int)b;
+  printf("정수부끼리의 합은 %d 입니다.\n", c);
+  return 0;
+}
