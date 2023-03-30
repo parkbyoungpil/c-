@@ -53,4 +53,4 @@ int main() {
   cout << "smaller..." << endl;
   m.smallerC();
   m.printC();
-}
+}  
