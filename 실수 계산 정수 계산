@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+  int x, y, z;
+  printf("세 정수 입력: ");
+  scanf("%d %d %d", &x, &y, &z);
+
+  printf("정수 나누기 결과는 %d \n", (x+z)/y);
+  printf("실수 나누기 결과는 %f \n", (float)(x+z)/y);
+  
+  return 0;
+}
