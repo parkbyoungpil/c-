@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  char rain;
+
+  printf("비가 오나요? y/n: " );
+  scanf("%c", &rain);
+
+  if(rain == 'Y' || rain == 'y')
+    printf("우산 준비\n");
+
+  printf("소개팅 간다\n");
+  
+  return 0;
+}
