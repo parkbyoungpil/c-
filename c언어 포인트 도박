@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+  int com, user, point = 30;
+
+  srand((unsigned)time(NULL));
+  com = rand() % 2;
+    
+  printf("홀(1), 짝(0) 선택: ");
+  scanf("%d", &user);
+
+  if ( com == user) {
+    point += 30;
+    printf("맞췄음! 포인트는 %d 억점\n", point);
+  }
+  else {
+    point -= 30;
+    printf("틀렸음! 포인트 날림. %d점\n", point);
+  }
+
+	return 0;
+}
