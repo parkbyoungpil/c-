@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int order;
+
+    for (order = 1; order <= 10; order++) {
+        system("cls");
+        printf("%d마리 통닭 튀긴다\n", order);
+        system("timeout 1 > NULL");
+    }
+    printf("다튀겼다!!\n");
+    return 0;
+}
