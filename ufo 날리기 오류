@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int k, sp;
+
+  for(k = 0; k < 50; k++){
+    ststem("cls");
+    for(sp = 0; sp < k; sp++)
+      printf(" ");
+    printf("<#=#>\n");
+    system("timeout 1 > NULL");
+  }
+  return 0;
+}
