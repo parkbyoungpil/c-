@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main(void) {
+  int trip;
+
+  srand((unsigned)time(NULL));
+  trip = rand() % 4;
+  
+  if(trip == 0){
+    printf("제주도로 출발\n");
+  }
+  else if(trip == 1){
+    printf("사이판으로 출발\n");
+  }
+  else{
+    printf("하와이로 출발\n");
+  }
+  return 0;
+}
