@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void) {
+  int k,m;
+  for(k = 0,m = 2; k < 4;k++,m=m*2){
+    printf("%d * %d = %d\n",k,m,k*m);
+  }
+  return 0;
+}
