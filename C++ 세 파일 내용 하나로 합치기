@@ -1,0 +1,49 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+  ifstream fin1("a1.txt");
+  if(!fin1){
+    cout << "읽기용 파일 열기 오류";
+    return 0;
+  }
+  ofstream fout("b.txt", ios::app);
+  if(!fout){
+    cout << "추가쓰기용 파일 열기 오류";
+    return 0;
+  }
+  
+  int c;
+  while((c = fin1.get())!= EOF){
+    fout << (char)c;
+  }
+  fin1.close();
+  
+  ifstream fin2("a2.txt");
+  if(!fin2){
+    cout << "읽기용 파일 열기 오류";
+    return 0;
+  }
+
+  while((c = fin2.get())!= EOF){
+    fout << (char)c;
+  }
+
+  fin2.close();
+  
+  ifstream fin3("a3.txt");
+  if(!fin3){
+    cout << "읽기용 파일 열기 오류";
+    return 0;
+  }
+
+  while((c = fin3.get())!= EOF){
+    fout << (char)c;
+  }
+
+  fin3.close();
+  fout.close();
+  cout << "파일 추가쓰기 완료" << endl;
+}
