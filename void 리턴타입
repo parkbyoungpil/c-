@@ -1,0 +1,14 @@
+#include <stdio.h>
+void print_line(char a, int b){
+  for(int c = 1; c <= b; c++){
+    printf("%c", a);
+  }
+  printf("\n");
+}
+int main(void) {
+  print_line('*',9);
+  print_line('!',5);
+  print_line('@',3);
+  
+  return 0;
+}
