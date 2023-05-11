@@ -1,0 +1,29 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+  ifstream fin("a.txt");
+  ofstream fout("b.txt");
+
+  string f,r;
+  cin.ignore('&');
+  cout << "find: ";
+  getline(cin, f);
+  cout << "replace: ";
+  getline(cin, r);
+
+  int sindex = 0;
+  while(true){
+    int findex = fin.find(f, sindex);
+    if (findex == -1){
+      break;
+    }
+    fin.replace(findex, f.length(), r);
+    sindex = findex + r.length();
+  }
+  fout << s;
+  fin.close();
+  fout.close();
+}
