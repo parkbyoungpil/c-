@@ -15,8 +15,10 @@ int main() {
     cerr << "파일을 열 수가 없습니다.";
     return 0;
   }
-  while(getline(fin, line, ' ')){
-    string s;
+  while(getline(fin, line)){
+    while(getline(fin, line, ' ')){
+      string s;
+    }
     double score;
   }
   
