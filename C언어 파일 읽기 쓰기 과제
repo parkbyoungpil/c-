@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+  double n, sum = 0;
+  FILE *fa = fopen("thirty.txt", "r");
+  FILE *fb = fopen("b.txt", "w");
+
+  if(fa == NULL || fb == NULL){
+    printf("파일 열기 실패\n");
+    return 0;
+  }
+  for(int i = 0; i < 30; i++){
+    fscanf(fa, "%lf", &n);
+    sum += n;
+  }
+
+  fprintf(fb, "합계: %lf\n", sum);
+  fprintf(fb, "평균: %lf\n", sum /30.00);
+
+  fclose(fa);
+  fclose(fb);
+  printf("처리 완료. b.txt를 열어서 결과를 확인하세요!\n");
+  return 0;
+}
