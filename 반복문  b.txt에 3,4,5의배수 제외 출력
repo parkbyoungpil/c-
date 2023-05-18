@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+   FILE *fa = fopen("b.txt", "w");
+
+   if (fa == NULL)
+   {
+      printf("파일 열기 실패\n"); 
+      return 0;
+   }
+
+   for (int i = 1; i <= 100; i++) {
+      if (i % 3 != 0 && i % 4 != 0 && i % 5 != 0)
+         fprintf(fa, "%d\n", i);
+   }
+
+   fclose(fa);
+
+   return 0;
+
+}
