@@ -2,19 +2,19 @@
 
 void swap(double *x, double *y){
   double tmp;
-  tmp = x;
-  x = y;
-  t = tmp;
+  tmp = *x;
+  *x = *y;
+  *y = tmp;
 }
 
 
 int main(void) {
   double a, b;
   printf("두 실수 입력: ");
-  scanf("%lf %lf" &a, &b);
+  scanf("%lf %lf", &a, &b);
 
-  printf("before swap --> %d %d \n", a, b);
+  printf("before swap --> %g %g \n", a, b);
   swap(&a, &b);
-  printf("after swap --> %d %d", a, b);
+  printf("after swap --> %g %g", a, b);
   return 0;
 }
