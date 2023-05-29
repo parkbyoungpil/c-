@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void myswap(int *a, int *b, int *c){
+  int tmp;
+  tmp = *c;
+  *c = *b;
+  *b = *a;
+  *a = tmp;
+}
+
+int main(void) {
+  int x, y, z;
+  printf("세 정수 입력: ");
+  scanf("%d %d %d",&x ,&y, &z);
+
+  myswap(&x, &y, &z);
+  printf("한 칸 씩 자리 이동 결과 ==> %d %d %d",x ,y ,z);
+  return 0;
+}
