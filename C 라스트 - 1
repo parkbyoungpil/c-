@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int n, j, i, a[100], b[100];
+  printf("정수 몇 개 입력하시겠습니까? ");
+  scanf("%d", &n);
+  printf("하나씩 입력하세요.\n");
+  for(i = 0; i < n; i++){
+    scanf("%d", &a[i]);
+  }
+  for(j = n-1, i = 0 ; j >= 0, i < n; j--, i++){
+    b[j] = a[i];
+  }
+  printf("거꾸로 된 배열\n");
+  for(i = 0; i < n; i++){
+    printf("%d ",b[i]);
+  }
+  return 0;
+}
